@@ -18,9 +18,12 @@ $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
+PRODUCT_COPY_FILES += \
+     vendor/liquid/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := tesla_osprey
+PRODUCT_NAME := liquid_osprey
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := osprey
