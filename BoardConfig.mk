@@ -31,11 +31,19 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_osprey
 TARGET_KERNEL_CONFIG := osprey_defconfig
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
+#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Rom Toolchain
-TARGET_GCC_VERSION_EXP := 4.9-uber
+#TARGET_GCC_VERSION_EXP := 4.9-uber
+
+# Optimization
+CLANG_O3 := true
+STRICT_ALIASING := true
+KRAIT_TUNINGS := false
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := false
+USE_PIPE := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216     # 16384 * 1024 mmcblk0p31
