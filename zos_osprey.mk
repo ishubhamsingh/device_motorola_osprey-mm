@@ -32,5 +32,5 @@ PRODUCT_RELEASE_NAME := osprey
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G (3rd gen)"
 
-# Broken Device Maintainers
+# Zephyr Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="ishubhamsingh"
