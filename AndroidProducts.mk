@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/zos_osprey.mk
+    $(LOCAL_DIR)/aosp_osprey.mk

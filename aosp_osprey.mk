@@ -15,7 +15,7 @@
 $(call inherit-product, device/motorola/osprey/full_osprey.mk)
 
 # Inherit some common Zephyr stuff.
-$(call inherit-product, vendor/zos/common.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
@@ -23,7 +23,7 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := osprey
-PRODUCT_NAME := zos_osprey
+PRODUCT_NAME := aosp_osprey
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := MotoG3
 PRODUCT_MANUFACTURER := Motorola
@@ -33,4 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G (3rd gen)"
 
 # Broken Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="ishubhamsingh"
+#PRODUCT_BUILD_PROP_OVERRIDES += DEVICE_MAINTAINERS="ishubhamsingh"
